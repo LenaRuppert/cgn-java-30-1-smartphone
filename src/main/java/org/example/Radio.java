@@ -2,9 +2,9 @@ package org.example;
 
 public interface Radio {
 
-    String startRadio();
+    boolean startRadio();
 
-    String stopRadio();
+    boolean stopRadio();
 
 
 }
