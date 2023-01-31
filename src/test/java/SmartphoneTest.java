@@ -2,6 +2,8 @@ import org.example.Smartphone;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 public class SmartphoneTest {
 
     @Test
@@ -39,7 +41,7 @@ public class SmartphoneTest {
         Smartphone smartphone = new Smartphone();
         smartphone.setModel("A1");
         smartphone.setManufacturer("Nokia");
-
+        
 
 
         String actual = smartphone.toString();
