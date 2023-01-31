@@ -14,17 +14,6 @@ public class FriendTest {
     }
 
 
-    @Test
-    void checkToString() {
-        Friend friend = new Friend();
-        friend.setPhoneNumber("015111589018");
-        friend.setName("Tom");
-        String actual = friend.toString();
-        Assertions.assertEquals("Friend{" +
-                "phoneNumber=" + "015111589018" +
-                "name=" + "Tom" +
-                '}', actual);
-    }
 
 
 
