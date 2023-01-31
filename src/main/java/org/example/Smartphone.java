@@ -7,16 +7,16 @@ public class Smartphone implements Radio, GPS {
     String model;
     String manufacturer;
 
-    List<String> kontakts = new ArrayList<>();
+    List<String> contacts = new ArrayList<>();
 
-    Smartphone(){
+    public Smartphone(){
 
     }
 
-    public Smartphone(String model, String manufacturer, List<String> kontakts) {
+    public Smartphone(String model, String manufacturer, List<String> contacts) {
         this.model = model;
         this.manufacturer = manufacturer;
-        this.kontakts = kontakts;
+        this.contacts = contacts;
     }
 
     public String getModel() {
@@ -35,12 +35,12 @@ public class Smartphone implements Radio, GPS {
         this.manufacturer = manufacturer;
     }
 
-    public List<String> getKontakts() {
-        return kontakts;
+    public List<String> getContacts() {
+        return contacts;
     }
 
-    public void setKontakts(List<String> kontakts) {
-        this.kontakts = kontakts;
+    public void setContacts(List<String> contacts) {
+        this.contacts = this.contacts;
     }
 
     @Override
@@ -65,7 +65,7 @@ public class Smartphone implements Radio, GPS {
         return "Smartphone{" +
                 "model='" + model + '\'' +
                 ", manufacturer='" + manufacturer + '\'' +
-                ", kontakts=" + kontakts +
+                ", contacts=" + contacts +
                 '}';
     }
 }

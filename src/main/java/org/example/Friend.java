@@ -1,14 +1,25 @@
 package org.example;
 
-public class Friend extends Contact{
-    private int phoneNumber;
+public class Friend extends Contact {
+    private String phoneNumber;
 
-    public Friend(){
+    public Friend() {
 
     }
 
-    public Friend(String name, int phoneNumber) {
+    public Friend(String name, String phoneNumber) {
+
         this.phoneNumber = phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber){
+        this.phoneNumber = phoneNumber;
+
+
+    }
+
+    public String getPhoneNumber(){
+        return phoneNumber;
     }
 
     @Override
